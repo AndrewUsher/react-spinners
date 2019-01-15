@@ -22,7 +22,8 @@
     "@babel/preset-react": "^7.0.0",
     "@storybook/cli": "^4.1.2",
     "@storybook/react": "^4.1.2",
-    "babel-loader": "^8.0.4"
+    "babel-loader": "^8.0.4",
+    "cz-conventional-changelog": "2.1.0"
   },
   "scripts": {
     "build": "babel src --out-dir lib",
@@ -30,5 +31,10 @@
     "predev": "yarn clean",
     "clean": "rm -rf lib",
     "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
